@@ -5,7 +5,6 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "vtsls",
     "cssls",
-    "prettier",
     "tailwindcss",
     "rust_analyzer",
     "emmet_language_server",
