@@ -2,7 +2,7 @@ vim.cmd("colorscheme carbonfox")
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.showmode = false
-vim.opt.cmdheight = 0
+-- vim.opt.cmdheight = 0
 
 -- Tabs options
 vim.opt.tabstop = 2
