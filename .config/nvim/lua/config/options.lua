@@ -1,5 +1,6 @@
-vim.cmd("colorscheme gruvbox")
-vim.opt.termguicolors = true
+vim.diagnostic.config({ virtual_text = true })
+
+-- vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.showmode = false
 -- vim.opt.cmdheight = 0
