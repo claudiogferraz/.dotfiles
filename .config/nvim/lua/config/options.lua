@@ -1,6 +1,6 @@
 vim.diagnostic.config({ virtual_text = true })
 
--- vim.opt.termguicolors = true
+vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.showmode = false
 -- vim.opt.cmdheight = 0
@@ -19,3 +19,6 @@ vim.opt.relativenumber = true
 
 -- Column rulers
 vim.opt.colorcolumn = "120"
+
+
+vim.cmd("colorscheme carbonfox")
