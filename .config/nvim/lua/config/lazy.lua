@@ -34,5 +34,4 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-require("config.keymaps")
-require("config.options")
+vim.cmd("colorscheme carbonfox")
