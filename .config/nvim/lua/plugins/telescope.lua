@@ -6,6 +6,13 @@ return {
     pickers = {
       find_files = {
         hidden = true,
+        file_ignore_patterns = { 'node_modules', '.git', '.venv' },
+      },
+      live_grep = {
+        file_ignore_patterns = { 'node_modules', '.git', '.venv' },
+        additional_args = function(_)
+          return { "--hidden" }
+        end
       },
     },
   },

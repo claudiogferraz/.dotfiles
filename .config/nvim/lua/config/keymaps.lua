@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>M", ":Mason<CR>", { desc = "Open Mason window" })
 vim.keymap.set("n", "<leader>t", ":ToggleTerm<CR>", { desc = "Open terminal buffer (ToggleTerm)" })
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer (NvimTree)" })
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit INSERT mode on terminal" })
-vim.keymap.set("n", ":", ":FineCmdline<CR>", { desc = "Open FineCmdline" })
+-- vim.keymap.set("n", ":", ":FineCmdline<CR>", { desc = "Open FineCmdline" })
 
 -- Buffer keymaps
 vim.keymap.set("n", "<leader>b", "", { desc = "+Buffer options" })

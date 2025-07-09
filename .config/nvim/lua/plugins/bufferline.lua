@@ -1,9 +1,9 @@
 return {
   "akinsho/bufferline.nvim",
-  lazy = false,
-  priority = 1000,
   version = "*",
-  dependencies = "nvim-tree/nvim-web-devicons",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
   opts = {
     options = {
       offsets = {
@@ -23,4 +23,7 @@ return {
       },
     },
   },
+  config = function(_, opts)
+    require("bufferline").setup(opts)
+  end,
 }

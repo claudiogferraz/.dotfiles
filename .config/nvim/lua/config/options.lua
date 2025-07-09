@@ -19,3 +19,6 @@ vim.opt.relativenumber = true
 
 -- Column rulers
 vim.opt.colorcolumn = "120"
+
+-- Theme config
+vim.cmd.colorscheme "ayu"
