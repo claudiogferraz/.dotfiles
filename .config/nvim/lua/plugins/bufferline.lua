@@ -6,18 +6,18 @@ return {
   },
   opts = {
     options = {
+      style = "padded_slant",
       offsets = {
         {
           filetype = "NvimTree",
           text = "File Explorer",
           highlight = "BufferLineTab",
           text_align = "center",
-          separator = false,
+          separator = true,
         },
         {
-          -- No filetype specified, so this applies generally
-          text = string.rep(" ", 42),   -- Create 42 spaces for a fixed offset
-          highlight = "BufferLineFill", -- Use a fill highlight group
+          text = string.rep(" ", 42),
+          highlight = "BufferLineFill",
           separator = true,
         },
       },

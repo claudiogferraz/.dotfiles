@@ -19,11 +19,15 @@ return {
     },
     sync_root_with_cwd = true,
     git = {
-      ignore = false,
+      ignore = true,
     },
     filters = {
       dotfiles = false,
-      custom = {}
+      custom = {
+        "node_modules",
+        ".git",
+        ".venv"
+      }
     },
     renderer = {
       group_empty = true,
