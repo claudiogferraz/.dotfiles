@@ -10,11 +10,16 @@ return {
   --   priority = 1000,
   -- },
   -- {
-  -- "navarasu/onedark.nvim",
-  -- lazy = false,
-  -- priority = 1000, -- make sure to load this before all the other start plugins
-  -- opts = {
-  --   style = "warmer",
-  -- }
-  -- }
+  --   "navarasu/onedark.nvim",
+  --   lazy = false,
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   opts = {
+  --     style = "darker",
+  --   }
+  -- },
+  -- {
+  --   "ellisonleao/gruvbox.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
 }

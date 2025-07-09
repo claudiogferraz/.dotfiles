@@ -6,19 +6,18 @@ return {
   },
   opts = {
     options = {
-      style = "padded_slant",
       offsets = {
         {
           filetype = "NvimTree",
           text = "File Explorer",
           highlight = "BufferLineTab",
           text_align = "center",
-          separator = true,
+          separator = false,
         },
         {
           text = string.rep(" ", 42),
           highlight = "BufferLineFill",
-          separator = true,
+          separator = false,
         },
       },
     },
