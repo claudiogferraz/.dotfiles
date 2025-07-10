@@ -5,6 +5,16 @@ return {
     priority = 1000,
   },
   -- {
+  --   "forest-nvim/sequoia.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
+  -- {
+  --   "olimorris/onedarkpro.nvim",
+  --   priority = 1000,
+  --   -- onedark, onelight, onedark_vivid, onedark_dark, vaporwave
+  -- },
+  -- {
   --   "UtkarshVerma/molokai.nvim",
   --   lazy = false,
   --   priority = 1000,
