@@ -22,4 +22,14 @@ return {
   --   lazy = false,
   --   priority = 1000,
   -- },
+  -- {
+  --   'datsfilipe/min-theme.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
+  -- {
+  --   'Mofiqul/vscode.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
 }
