@@ -25,12 +25,12 @@ return {
       dotfiles = false,
       custom = {
         "node_modules",
-        ".git",
+        "^.git$",
         ".venv"
       }
     },
     renderer = {
-      group_empty = true,
+      group_empty = false,
       full_name = true,
     },
   },
