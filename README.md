@@ -1,10 +1,11 @@
-# My Dotfiles
-
+<div align="center">
+<h1>My Dotfiles</h1>
+<p>
+  My configs and instructions for quickly setting up my preferred work environment on a new machine.
+  <br/>I use this on my home-server, workstation, and laptop, all running RHEL-based distros.
+</p>
 <img src="https://raw.githubusercontent.com/claudiogferraz/.dotfiles/refs/heads/main/screenshots/nvim.webp" />
-
-This configurations and instructions are made specifically for quickly setting up my preferred environment on machines running Fedora and RHEL-based distros.
-
-I use this on my home-server, workstation, and laptop.
+</div>
 
 ## Instructions - Step by step
 
