@@ -1,5 +1,7 @@
 # My Dotfiles
 
+<img src="https://raw.githubusercontent.com/claudiogferraz/.dotfiles/refs/heads/main/screenshots/nvim.webp" />
+
 This configurations and instructions are made specifically for quickly setting up my preferred environment on machines running Fedora and RHEL-based distros.
 
 I use this on my home-server, workstation, and laptop.
