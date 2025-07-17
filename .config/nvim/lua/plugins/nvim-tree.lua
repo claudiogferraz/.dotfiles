@@ -19,7 +19,7 @@ return {
     },
     sync_root_with_cwd = true,
     git = {
-      ignore = true,
+      ignore = false,
     },
     filters = {
       dotfiles = false,
