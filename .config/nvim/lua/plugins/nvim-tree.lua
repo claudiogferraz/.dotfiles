@@ -34,7 +34,4 @@ return {
       full_name = true,
     },
   },
-  config = function(_, opts)
-    require("nvim-tree").setup(opts)
-  end,
 }
