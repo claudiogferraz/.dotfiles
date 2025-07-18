@@ -1,8 +1,18 @@
 return {
   {
-    "Shatur/neovim-ayu",
+    "marko-cerovac/material.nvim",
     lazy = false,
     priority = 1000,
+    config = function()
+      vim.g.material_style = "darker"
+      vim.cmd.colorscheme "material"
+      vim.cmd [[
+        highlight Normal guibg=none
+        highlight NonText guibg=none
+        highlight Normal ctermbg=none
+        highlight NonText ctermbg=none
+      ]]
+    end,
   },
   -- {
   --   "forest-nvim/sequoia.nvim",
