@@ -9,7 +9,7 @@ return {
       section_separators = { left = '', right = '' },
       disabled_filetypes = {
         statusline = {},
-        winbar = { 'NvimTree' },
+        winbar = { 'NvimTree', 'toggleterm' },
       },
       ignore_focus = { 'NvimTree' },
       always_divide_middle = true,
@@ -60,7 +60,7 @@ return {
       lualine_z = {}
     },
     inactive_winbar = {
-      lualine_a = {},
+      lualine_a = { 'buffers' },
       lualine_b = {},
       lualine_c = {},
       lualine_x = {},
