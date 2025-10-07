@@ -7,12 +7,12 @@ vim.lsp.config('lua_ls', {
   settings = {
     Lua = {
       diagnostics = {
-        globals = { 'vim', 'require' }, -- Example custom setting
+        globals = { 'vim', 'require' },
       },
     },
   },
 })
 
 vim.lsp.config('*', {
-  on_attach = on_attach, -- Attach your keymaps/functions to ALL LSPs
+  on_attach = on_attach,
 })
