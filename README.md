@@ -64,8 +64,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ```bash
 # Run Mise installation script
-sudo dnf install -y dnf-plugins-core
-sudo dnf config-manager addrepo --from-repofile=https://mise.jdx.dev/rpm/mise.repo
+sudo dnf enable jdxcode/mise
 sudo dnf install -y mise
 ```
 
