@@ -50,14 +50,10 @@ Then we manually install packages that aren't pre-packaged by the distro, runnin
 ```bash
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
 
-```bash
 # Download ZSH Autosuggestions plugin
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
 
-```bash
 # Download ZSH Syntax Highlighting plugn
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
@@ -73,14 +69,13 @@ sudo dnf install -y mise
 ```bash
 # Link Git config
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
-```
 
-```bash
 # Link ZSH config
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
-```
 
-```bash
 # Link Neovim config
 ln -sf ~/.dotfiles/.config/nvim ~/.config
+
+# Link Hyprland config
+ln -sf ~/.dotfiles/.config/hypr/hyprland.conf ~/.config/hypr
 ```
