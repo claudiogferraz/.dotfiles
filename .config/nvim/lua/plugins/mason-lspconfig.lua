@@ -13,6 +13,7 @@ return {
       "rust_analyzer",
       "emmet_language_server",
       "dockerls",
+      "markdown_oxide",
     },
   },
 }

@@ -3,7 +3,7 @@ vim.diagnostic.config({ virtual_text = true })
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.showmode = false
-vim.opt.winborder = 'rounded'
+-- vim.opt.winborder = 'rounded'
 -- vim.opt.cmdheight = 0
 
 -- Tabs options
