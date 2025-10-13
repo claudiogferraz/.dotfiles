@@ -3,6 +3,7 @@ vim.diagnostic.config({ virtual_text = true })
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.showmode = false
+vim.opt.winborder = 'rounded'
 -- vim.opt.cmdheight = 0
 
 -- Tabs options
@@ -18,4 +19,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Column rulers
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = "100"
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
