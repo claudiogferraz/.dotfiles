@@ -1,17 +1,7 @@
 return {
-  "EdenEast/nightfox.nvim",
+  "Shatur/neovim-ayu",
   config = function()
-    require("nightfox").setup({
-      options = {
-        transparent = true,
-      },
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    })
-
     vim.o.background = "dark"
-    vim.cmd.colorscheme "carbonfox"
+    vim.cmd.colorscheme "ayu"
   end,
 }

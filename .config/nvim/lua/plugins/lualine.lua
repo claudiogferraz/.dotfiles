@@ -6,9 +6,9 @@ return {
   opts = {
     options = {
       icons_enabled = true,
-      theme = 'carbonfox',
-      component_separators = '',
-      section_separators = '',
+      theme = 'ayu',
+      component_separators = { left = '', right = '' },
+      section_separators = { left = '', right = '' },
       disabled_filetypes = {
         statusline = {},
         winbar = { 'NvimTree', 'toggleterm' },
@@ -21,7 +21,7 @@ return {
         statusline = 1000,
         tabline = 1000,
         winbar = 1000,
-        refresh_time = 16, -- ~60fps
+        refresh_time = 16,
         events = {
           'WinEnter',
           'BufEnter',
