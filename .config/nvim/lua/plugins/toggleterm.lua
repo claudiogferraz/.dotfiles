@@ -1,5 +1,7 @@
 return {
   'akinsho/toggleterm.nvim',
   version = "*",
-  opts = {},
+  opts = {
+    shell = '/bin/zsh',
+  },
 }

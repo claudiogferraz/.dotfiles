@@ -1,6 +1,6 @@
 return {
-  "EdenEast/nightfox.nvim",
+  "nyoom-engineering/oxocarbon.nvim",
   config = function()
-    vim.cmd.colorscheme "carbonfox"
+    vim.cmd.colorscheme "oxocarbon"
   end,
 }

@@ -6,9 +6,9 @@ return {
   opts = {
     options = {
       icons_enabled = true,
-      theme = 'carbonfox',
-      component_separators = { left = '', right = '' },
-      section_separators = { left = '', right = '' },
+      theme = 'oxocarbon',
+      component_separators = { left = '', right = '' },
+      section_separators = { left = '', right = '' },
       disabled_filetypes = {
         statusline = {},
         winbar = { 'NvimTree', 'toggleterm' },
@@ -54,7 +54,15 @@ return {
     },
     tabline = {},
     winbar = {
-      lualine_a = { 'buffers' },
+      lualine_a = { {
+        'buffers',
+        use_mode_colors = false,
+        buffers_color = {
+          -- Same values as the general color option can be used here.
+          active = 'lualine_a_normal', -- Color for active buffer.
+          inactive = 'Normal',         -- Color for inactive buffer.
+        },
+      } },
       lualine_b = {},
       lualine_c = {},
       lualine_x = {},
