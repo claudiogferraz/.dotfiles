@@ -60,7 +60,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ```bash
 # Run Mise installation script
-sudo dnf enable jdxcode/mise
+sudo dnf copr enable jdxcode/mise
 sudo dnf install -y mise
 ```
 
