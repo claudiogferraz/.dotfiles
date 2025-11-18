@@ -73,6 +73,9 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 # Link ZSH config
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
+# Create .config dir if it doesn't exist
+mkdir ~/.config
+
 # Link Neovim config
 ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim
 
