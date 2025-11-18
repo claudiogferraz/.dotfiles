@@ -74,7 +74,7 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
 # Link Neovim config
-ln -sf ~/.dotfiles/.config/nvim ~/.config
+ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim
 
 # Link Hyprland config
 ln -sf ~/.dotfiles/.config/hypr/hyprland.conf ~/.config/hypr
