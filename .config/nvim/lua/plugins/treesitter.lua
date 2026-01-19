@@ -15,8 +15,7 @@ return {
       "yaml",
       "markdown",
       "bash",
-      "python",
-      "env"
+      "python"
     },
     highlight = {
       enable = true,
