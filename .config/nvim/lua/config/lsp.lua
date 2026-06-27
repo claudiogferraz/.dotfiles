@@ -1,6 +1,6 @@
-local on_attach = function(client, bufnr)
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = bufnr })
-end
+-- local on_attach = function(client, bufnr)
+--   vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = bufnr })
+-- end
 
 vim.lsp.config('lua_ls', {
   on_attach = on_attach,

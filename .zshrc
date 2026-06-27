@@ -121,4 +121,4 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-. "$HOME/.local/bin/env"
+export PATH="$HOME/.local/bin:$PATH"

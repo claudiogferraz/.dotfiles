@@ -1,6 +1,6 @@
 return {
   'saghen/blink.cmp',
-  dependencies = { 'rafamadriz/friendly-snippets', 'Shatur/neovim-ayu' },
+  dependencies = { 'rafamadriz/friendly-snippets' },
   lazy = false,
 
   version = '1.*',
