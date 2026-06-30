@@ -14,8 +14,8 @@ vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "Find buffe
 vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Help tags (Telescope)" })
 
 -- Code related keymaps
-vim.keymap.set("n", "<leader>c", "", { desc = "+Code options" })
-vim.keymap.set("n", "<leader>ca", ":lua vim.lsp.buf.code_action()<CR>", { desc = "Code actions" })
-vim.keymap.set("n", "<leader>cd", ":Trouble diagnostics toggle<CR>", { desc = "Toggle diagnostics (Trouble)" })
-vim.keymap.set("n", "<leader>cD", ":Trouble diagnostics toggle filter.buf=0<CR>",
+vim.keymap.set("n", "<C-k>", "", { desc = "+Code options" })
+vim.keymap.set("n", "<C-k>a", ":lua vim.lsp.buf.code_action()<CR>", { desc = "Code actions" })
+vim.keymap.set("n", "<C-k>d", ":Trouble diagnostics toggle<CR>", { desc = "Toggle diagnostics (Trouble)" })
+vim.keymap.set("n", "<C-k>D", ":Trouble diagnostics toggle filter.buf=0<CR>",
   { desc = "Toggle diagnostics for current buffer (Trouble)" })
