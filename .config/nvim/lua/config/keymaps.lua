@@ -8,14 +8,15 @@ vim.keymap.set("n", "<C-p>", ":bp<CR>", { desc = "Go to previous buffer" })
 vim.keymap.set("n", "<C-n>", ":bn<CR>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<C-d>", ":bd<CR>:bp<CR>", { desc = "Quit current buffer" })
 vim.keymap.set("n", "<C-D>", ":bd!<CR>:bp<CR>", { desc = "Force quit current buffer" })
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Find files (Telescope)" })
-vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Live grep (Telescope)" })
-vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "Find buffers (Telescope)" })
-vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Help tags (Telescope)" })
+
+-- Telescope keymaps
+vim.keymap.set("n", "<C-F>", ":Telescope Options<CR>", { desc = "Telescope Options" })
+vim.keymap.set("n", "<C-F>f", ":Telescope find_files<CR>", { desc = "Find files (Telescope)" })
+vim.keymap.set("n", "<C-F>g", ":Telescope live_grep<CR>", { desc = "Live grep (Telescope)" })
+vim.keymap.set("n", "<C-F>b", ":Telescope buffers<CR>", { desc = "Find buffers (Telescope)" })
+vim.keymap.set("n", "<C-F>h", ":Telescope help_tags<CR>", { desc = "Help tags (Telescope)" })
 
 -- Code related keymaps
 vim.keymap.set("n", "<C-k>", "", { desc = "+Code options" })
 vim.keymap.set("n", "<C-k>a", ":lua vim.lsp.buf.code_action()<CR>", { desc = "Code actions" })
-vim.keymap.set("n", "<C-k>d", ":Trouble diagnostics toggle<CR>", { desc = "Toggle diagnostics (Trouble)" })
-vim.keymap.set("n", "<C-k>D", ":Trouble diagnostics toggle filter.buf=0<CR>",
-  { desc = "Toggle diagnostics for current buffer (Trouble)" })
+vim.keymap.set("n", "<C-k>d", ":lua vim.diagnostic.open_float()<CR>", { desc = "Toggle diagnostics" })
