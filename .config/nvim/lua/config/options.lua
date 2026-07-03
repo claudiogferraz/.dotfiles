@@ -23,5 +23,5 @@ vim.opt.colorcolumn = "100"
 -- Diagnostics
 vim.diagnostic.config({
   signs = true,
-  virtual_text = true,
+  virtual_text = false,
 })
