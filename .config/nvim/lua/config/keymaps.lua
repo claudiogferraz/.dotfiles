@@ -20,3 +20,9 @@ vim.keymap.set("n", "<C-F>h", ":Telescope help_tags<CR>", { desc = "Help tags (T
 vim.keymap.set("n", "<C-k>", "", { desc = "+Code options" })
 vim.keymap.set("n", "<C-k>a", ":lua vim.lsp.buf.code_action()<CR>", { desc = "Code actions" })
 vim.keymap.set("n", "<C-k>d", ":lua vim.diagnostic.open_float()<CR>", { desc = "Toggle diagnostics" })
+vim.keymap.set("n", "<C-k>o", function()
+	vim.lsp.buf.code_action({
+		context = { only = { "source.organizeImports" } },
+		apply = true,
+	})
+end, { desc = "Organize Imports" })
