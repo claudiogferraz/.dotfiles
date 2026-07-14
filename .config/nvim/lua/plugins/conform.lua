@@ -1,18 +1,18 @@
 return {
-  'stevearc/conform.nvim',
-  opts = {
-    format_on_save = true,
-    formatters_by_ft = {
-      lua = { "stylua" },
-      markdown = { "prettier", "eslint_d" },
-      javascript = { "prettier", "eslint_d" },
-      typescript = { "prettier", "eslint_d" },
-      python = { "isort", "black" },
-      yaml = { "prettier", "eslint_d" },
-      json = { "prettier", "eslint_d" },
-      rust = { "rustfmt", lsp_format = "fallback" },
-      go = { "gofmt" },
-    },
-
-  },
+	"stevearc/conform.nvim",
+	opts = {
+		timeout_ms = 2000,
+		format_on_save = true,
+		formatters_by_ft = {
+			lua = { "stylua" },
+			markdown = { "prettier" },
+			javascript = { "prettier" },
+			typescript = { "prettier" },
+			python = { "isort" },
+			yaml = { "prettier" },
+			json = { "prettier" },
+			rust = { "rustfmt", lsp_format = "fallback" },
+			go = { "gofmt" },
+		},
+	},
 }

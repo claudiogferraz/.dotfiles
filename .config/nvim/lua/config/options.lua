@@ -3,6 +3,8 @@ vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.showmode = false
 
+-- Window options
+vim.o.winborder = "rounded"
 
 -- Tabs options
 vim.opt.tabstop = 2
@@ -22,6 +24,6 @@ vim.opt.colorcolumn = "100"
 
 -- Diagnostics
 vim.diagnostic.config({
-  signs = true,
-  virtual_text = false,
+	signs = true,
+	virtual_text = false,
 })
