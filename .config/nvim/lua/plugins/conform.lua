@@ -1,16 +1,16 @@
 return {
 	"stevearc/conform.nvim",
 	opts = {
-		timeout_ms = 2000,
+		timeout_ms = 3000,
 		format_on_save = true,
 		formatters_by_ft = {
 			lua = { "stylua" },
-			markdown = { "prettier" },
-			javascript = { "prettier" },
-			typescript = { "prettier" },
+			markdown = { "prettierd", "prettier" },
+			javascript = { "prettierd", "prettier" },
+			typescript = { "prettierd", "prettier" },
 			python = { "isort" },
-			yaml = { "prettier" },
-			json = { "prettier" },
+			yaml = { "prettierd", "prettier" },
+			json = { "prettierd", "prettier" },
 			rust = { "rustfmt", lsp_format = "fallback" },
 			go = { "gofmt" },
 		},
