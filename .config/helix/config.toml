@@ -1,0 +1,11 @@
+theme = "adwaita-dark"
+
+[editor]
+line-number = "relative"
+auto-format = true
+popup-border = "all"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"

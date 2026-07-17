@@ -6,6 +6,10 @@ vim.opt.showmode = false
 -- Window options
 vim.o.winborder = "rounded"
 
+-- Explorer / Netrw options
+vim.g.netrw_liststyle = 3
+vim.g.netrw_winsize = 25
+
 -- Tabs options
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
