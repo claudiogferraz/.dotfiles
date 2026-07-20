@@ -19,5 +19,8 @@ return {
 			"yamlls",
 			"html",
 		},
+    ui = {
+      border = "rounded",
+    },
 	},
 }
