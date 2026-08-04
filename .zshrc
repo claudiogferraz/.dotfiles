@@ -44,6 +44,7 @@ esac
 
 # add .local/bin to path
 export PATH="$HOME/.local/bin:$PATH"
-
+# add /usr/local/bin to path
+export PATH="$PATH:/usr/local/bin"
 
 eval "$(/home/claudio/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
