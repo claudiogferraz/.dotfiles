@@ -7,6 +7,8 @@ return {
 	opts = {
 		ensure_installed = {
 			"lua_ls",
+			"stylua",
+			"eslint",
 			"vtsls",
 			"cssls",
 			"tailwindcss",
@@ -14,13 +16,12 @@ return {
 			"emmet_language_server",
 			"dockerls",
 			"markdown_oxide",
-			"eslint",
 			"jsonls",
 			"yamlls",
 			"html",
 		},
-    ui = {
-      border = "rounded",
-    },
+		ui = {
+			border = "rounded",
+		},
 	},
 }

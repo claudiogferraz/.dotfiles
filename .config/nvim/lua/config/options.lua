@@ -1,14 +1,14 @@
 -- General options
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
-vim.opt.showmode = false
+vim.opt.showmode = true
 
 -- Window options
 vim.o.winborder = "rounded"
 
 -- Explorer / Netrw options
 vim.g.netrw_liststyle = 3
-vim.g.netrw_winsize = 25
+vim.g.netrw_winsize = 20
 
 -- Tabs options
 vim.opt.tabstop = 2
@@ -29,5 +29,5 @@ vim.opt.colorcolumn = "100"
 -- Diagnostics
 vim.diagnostic.config({
 	signs = true,
-	virtual_text = false,
+	virtual_text = true,
 })
