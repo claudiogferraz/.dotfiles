@@ -4,7 +4,7 @@ vim.opt.cursorline = true
 vim.opt.showmode = true
 
 -- Window options
--- vim.o.winborder = "rounded"
+vim.o.winborder = "solid"
 
 -- Explorer / Netrw options
 vim.g.netrw_liststyle = 3

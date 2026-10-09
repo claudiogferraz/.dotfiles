@@ -7,7 +7,9 @@ return {
 		"nvim-telescope/telescope-fzf-native.nvim",
 	},
 	opts = {
-		rounded = false,
+		defaults = {
+			borderchars = { " ", " ", " ", " ", " ", " ", " ", " " },
+		},
 		pickers = {
 			find_files = {
 				hidden = true,
