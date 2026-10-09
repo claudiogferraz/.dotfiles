@@ -1,0 +1,15 @@
+[general]
+import = ["~/.config/alacritty/themes/warm-burnout-dark.toml"]
+live_config_reload = true
+
+[window]
+opacity = 1.00
+blur = false 
+
+[font]
+size = 11.0
+offset.y = 1
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+
