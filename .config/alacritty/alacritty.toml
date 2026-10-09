@@ -9,6 +9,23 @@ blur = false
 [font]
 size = 11.0
 offset.y = 1
+offset.x = 0
+
+[font.normal]
+family = "JetBrainsMono NerdFont"
+style = "Regular"
+
+[font.italic]
+family = "JetBrainsMono NerdFont"
+style = "Italic"
+
+[font.bold]
+family = "JetBrainsMono NerdFont"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono NerdFont"
+style = "Bold Italic"
 
 [cursor]
 style = { shape = "Beam", blinking = "Always" }
