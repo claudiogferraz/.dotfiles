@@ -2,7 +2,7 @@
 <h1>My Dotfiles</h1>
 <p>
   My configs and instructions for quickly setting up my preferred work environment on a new machine.
-  <br/>I use this on my home-server, workstation, and laptop, all running RHEL-based distros.
+  <br/>I use this on my home-server, workstation, and laptop, all running Arch-based distros.
 </p>
 <img src="https://raw.githubusercontent.com/claudiogferraz/.dotfiles/refs/heads/main/screenshots/nvim.webp" />
 </div>
@@ -16,7 +16,7 @@ The following instructions will help you set-up your environment from installing
 Install **Git** and **Curl**, which are required to run most of the other commands you'll see on this guide. To do so, run
 
 ```bash
-sudo dnf install git curl
+sudo pacman -S git curl
 ```
 
 ### Step 2 - Clone the repo
@@ -33,35 +33,16 @@ We need to ensure that everything is installed before linking the configuration 
 
 The following packages will be installed at this step:
 
-- ZSH - Extensible shell with lots of improvements over bash
-- Oh My Zsh - Framework for managing your ZSH, with lots of pre-bundled plugins, themes, etc.
+- Brush - POSIX compliant shell with lots of improvements over bash
 - Mise - One tool for managing all your runtime versions
 - Podman & Compose - Daemonless container management tool
+- Vim - Without any plugins or custom config, just to quickly edit files when needed
 
 First we Install all the software pre-packaged by your distro:
 
 ```bash
-# Install ZSH, Neovim, Podman and Compose
-sudo dnf install zsh nvim podman podman-compose
-```
-
-Then we manually install packages that aren't pre-packaged by the distro, running their respective installation commands:
-
-```bash
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Download ZSH Autosuggestions plugin
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-# Download ZSH Syntax Highlighting plugn
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-
-```bash
-# Run Mise installation script
-sudo dnf copr enable jdxcode/mise
-sudo dnf install -y mise
+# Install Brush, Vim, Mise, Podman and Compose
+sudo pacman -S brush gvim mise podman podman-compose
 ```
 
 ### Step 4 - Create symbolic links
@@ -70,15 +51,5 @@ sudo dnf install -y mise
 # Link Git config
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
-# Link ZSH config
-ln -sf ~/.dotfiles/.zshrc ~/.zshrc
-
 # Create .config dir if it doesn't exist
 mkdir ~/.config
-
-# Link Neovim config
-ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim
-
-# Link Hyprland config
-ln -sf ~/.dotfiles/.config/hypr/hyprland.conf ~/.config/hypr
-```
