@@ -50,6 +50,19 @@ sudo pacman -S brush gvim mise podman podman-compose
 ```bash
 # Link Git config
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+```
 
+```bash
+# Link Bash config
+ln -sf ~/.dotfiles/.bashrc ~/.bashrc
+```
+
+```bash
 # Create .config dir if it doesn't exist
 mkdir ~/.config
+```
+
+```bash
+# Link Zed config
+ln -sf ~/.dotfiles/.config/zed ~/.config/zed
+```
