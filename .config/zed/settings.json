@@ -79,6 +79,12 @@
   },
   "agent": {
     "sandbox_permissions": {
+      "write_paths": [
+        {
+          "requested": "/home/claudio/.local/share/pnpm",
+          "resolved": "/home/claudio/.local/share/pnpm"
+        }
+      ],
       "network_hosts": [
         "registry.npmjs.org"
       ]
