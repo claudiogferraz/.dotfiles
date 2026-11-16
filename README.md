@@ -1,11 +1,7 @@
-<div align="center">
-<h1>My Dotfiles</h1>
-<p>
-  My configs and instructions for quickly setting up my preferred work environment on a new machine.
-  <br/>I use this on my home-server, workstation, and laptop, all running Arch-based distros.
-</p>
-<img src="https://raw.githubusercontent.com/claudiogferraz/.dotfiles/refs/heads/main/screenshots/nvim.webp" />
-</div>
+# My Dotfiles
+
+My configs and instructions for quickly setting up my preferred work environment on a new machine.
+<br/>I use this on my home-server, workstation, and laptop, all running Arch-based distros.
 
 ## Instructions - Step by step
 
@@ -15,8 +11,16 @@ The following instructions will help you set-up your environment from installing
 
 Install **Git** and **Curl**, which are required to run most of the other commands you'll see on this guide. To do so, run
 
+#### On ArchLinux:
+
 ```bash
 sudo pacman -S git curl
+```
+
+#### On Fedora/RHEL:
+
+```bash
+sudo dnf install git curl
 ```
 
 ### Step 2 - Clone the repo
@@ -33,37 +37,43 @@ We need to ensure that everything is installed before linking the configuration 
 
 The following packages will be installed at this step:
 
-- Brush - POSIX compliant shell with lots of improvements over bash
 - Mise - One tool for managing all your runtime versions
-- Podman & Compose - Daemonless container management tool
 - Vim - Without any plugins or custom config, just to quickly edit files when needed
 
 First we Install all the software pre-packaged by your distro:
 
+#### On ArchLinux:
+
 ```bash
-# Install Vim, Mise, (optional) Podman and Compose
-sudo pacman -S brush gvim mise podman podman-compose
+sudo pacman -S brush gvim mise
+```
+
+#### On Fedora:
+
+```bash
+sudo dnf install vim;
+sudo dnf copr enable jdxcode/mise;
+sudo dnf install mise
 ```
 
 ### Step 4 - Create symbolic links
 
 ```bash
 # Link Git config
-ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
-```
+ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig;
 
-```bash
 # Link Bash config
-ln -sf ~/.dotfiles/.bashrc ~/.bashrc
-```
+ln -sf ~/.dotfiles/.bashrc ~/.bashrc;
 
-```bash
 # Create .config dir if it doesn't exist
-mkdir ~/.config
-```
+mkdir ~/.config;
 
-```bash
 # Link Zed config
 ln -sf ~/.dotfiles/.config/zed ~/.config/zed
 ```
 
+---
+
+This simple setup README.md was created by me, for my own use and to help others that might want to achieve a similar minimalist workflow.
+
+If it helped you, consider [buying me a coffee](https://buymeacoffee.com/claudiogferraz) 😁☕
