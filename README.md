@@ -41,7 +41,7 @@ The following packages will be installed at this step:
 First we Install all the software pre-packaged by your distro:
 
 ```bash
-# Install Brush, Vim, Mise, Podman and Compose
+# Install Vim, Mise, (optional) Podman and Compose
 sudo pacman -S brush gvim mise podman podman-compose
 ```
 
@@ -66,3 +66,4 @@ mkdir ~/.config
 # Link Zed config
 ln -sf ~/.dotfiles/.config/zed ~/.config/zed
 ```
+
