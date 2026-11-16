@@ -66,7 +66,7 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig;
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc;
 
 # Create .config dir if it doesn't exist
-mkdir ~/.config;
+mkdir -p ~/.config;
 
 # Link Zed config
 ln -sf ~/.dotfiles/.config/zed ~/.config/zed
